@@ -25,11 +25,11 @@ def build_feature_vectors(thelist):
         str_lower = str.lower()
         prefix = str_lower[:20]
         ## 1st feature, os
-        if "(windows" in prefix:
+        if "windows" in prefix:
             row.append(1)
-        elif "(linux" in prefix:
+        elif "linux" in prefix:
             row.append(2)
-        elif "(compatible" in prefix:
+        elif "compatible" in prefix:
             row.append(3)
         else:
             row.append(4)
